@@ -7,7 +7,8 @@ install_requires=['jgo>=0.4.0']
 entry_points={
     'console_scripts': [
         'paintera-conversion-helper=paintera_conversion_helper:launch_pch',
-        'extract-to-scalar=paintera_conversion_helper:launch_extract_to_scalar'
+        'extract-to-scalar=paintera_conversion_helper:launch_extract_to_scalar',
+        'paintera-convert=paintera_conversion_helper:launch_paintera_convert'
     ]
 }
 

@@ -55,9 +55,7 @@ def _add_spark_master(argv, spark_master) -> list[str]:
 
 def _inject_jgo_args(argv) -> list[str] :
     argv = _add_spark_master(argv, os.getenv('SPARK_MASTER', 'local[*]'))
-    argv =  _add_manage_dependencies(argv)
-    print(argv)
-    return argv
+    return _add_manage_dependencies(argv)
 
 
 def launch_extract_to_scalar(argv=sys.argv[1:]):
